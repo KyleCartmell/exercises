@@ -1,0 +1,1 @@
+gcc leibniz.c
