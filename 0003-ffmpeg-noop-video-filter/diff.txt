@@ -1,0 +1,24 @@
+diff --git a/libavfilter/Makefile b/libavfilter/Makefile
+index dbd8685791..bc6df9b008 100644
+--- a/libavfilter/Makefile
++++ b/libavfilter/Makefile
+@@ -354,6 +354,7 @@ OBJS-$(CONFIG_NLMEANS_OPENCL_FILTER)         += vf_nlmeans_opencl.o opencl.o ope
+ OBJS-$(CONFIG_NNEDI_FILTER)                  += vf_nnedi.o
+ OBJS-$(CONFIG_NOFORMAT_FILTER)               += vf_format.o
+ OBJS-$(CONFIG_NOISE_FILTER)                  += vf_noise.o
++OBJS-$(CONFIG_NOOP_FILTER)                   += vf_noop.o
+ OBJS-$(CONFIG_NORMALIZE_FILTER)              += vf_normalize.o
+ OBJS-$(CONFIG_NULL_FILTER)                   += vf_null.o
+ OBJS-$(CONFIG_OCR_FILTER)                    += vf_ocr.o
+diff --git a/libavfilter/allfilters.c b/libavfilter/allfilters.c
+index 761c261005..500de1c4c5 100644
+--- a/libavfilter/allfilters.c
++++ b/libavfilter/allfilters.c
+@@ -340,6 +340,7 @@ extern const AVFilter ff_vf_nlmeans_opencl;
+ extern const AVFilter ff_vf_nnedi;
+ extern const AVFilter ff_vf_noformat;
+ extern const AVFilter ff_vf_noise;
++extern const AVFilter ff_vf_noop;
+ extern const AVFilter ff_vf_normalize;
+ extern const AVFilter ff_vf_null;
+ extern const AVFilter ff_vf_ocr;
